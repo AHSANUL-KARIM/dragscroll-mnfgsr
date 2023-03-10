@@ -1,0 +1,18 @@
+<drag-scroll #nav>
+  <mat-tab-group drag-scroll-item>
+    <mat-tab [label]="tab" *ngFor="let tab of lotsOfTabs">Content</mat-tab>
+  </mat-tab-group>
+</drag-scroll>
+
+<!--<div  drag-scroll-item> 
+    <img src="some-url" />
+    <img src="some-url" />
+    <img src="some-url" />
+   </div>
+   <div drag-scroll-item>
+    <img src="some-url" />
+    <img src="some-url" />
+    <img src="some-url" />
+   </div>-->
+<button (click)="moveLeft()">Left</button>
+<button (click)="moveRight()">Right</button>
